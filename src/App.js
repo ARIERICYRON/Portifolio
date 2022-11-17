@@ -1,10 +1,20 @@
-import './App.css';
+import React from "react";
+import "./App.css";
+import Main from "./containers/Main";
+import { ThemeProvider } from "styled-components";
+import { chosenTheme } from "./theme";
+import { GlobalStyles } from "./global";
 
 function App() {
   return (
-    <div className="App">
-      <h1>welcome Home</h1>
-    </div>
+    <ThemeProvider theme={chosenTheme}>
+      <>
+        <GlobalStyles />
+        <div>
+          <Main theme={chosenTheme} />
+        </div>
+      </>
+    </ThemeProvider>
   );
 }
 
