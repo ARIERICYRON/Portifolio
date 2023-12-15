@@ -2,10 +2,10 @@
   "data": [
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
-      "name": "masterPortfolio",
-      "createdAt": "2020-03-06T16:26:54Z",
-      "url": "https://github.com/ashutosh1919/masterPortfolio",
-      "description": "The complete portfolio website hosted using github pages (gh-pages). Visit the website here : ",
+      "name": "Portfolio",
+      "createdAt": "2022-10-06T16:26:54Z",
+      "url": "https://github.com/ARIERICYRON/Portifolio",
+      "description": "The complete portfolio website hosted using github pages (gh-pages). Visit the website here : www.ariericyron.com ",
       "isFork": false,
       "languages": [
         {
@@ -24,10 +24,10 @@
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNjkwNzUwMjM=",
-      "name": "truvisory",
-      "createdAt": "2020-06-03T11:53:55Z",
-      "url": "https://github.com/ashutosh1919/truvisory",
-      "description": "This project is meant to provide resources to users who want to access good LinkedIn posts which contains resources to learn any Technology, Design, Self-Branding, Motivation etc. You can visit project by:",
+      "name": "Tastebite",
+      "createdAt": "2022-06-03T11:53:55Z",
+      "url": "https://github.com/DennohKim/Tastebite-Recipe-App",
+      "description": "Tastebite is a unique recipe-sharing and discovery platform, where users can save their favorite recipes in the app, create new ones and share them with friends.",
       "isFork": false,
       "languages": [
         {
@@ -46,28 +46,28 @@
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyNzM1MTI1NTE=",
-      "name": "ml-data-bot",
-      "createdAt": "2020-06-19T14:24:55Z",
-      "url": "https://github.com/ashutosh1919/ml-data-bot",
-      "description": "Chatbot which helps you to get important statistics from the data to get insights to build Machine learning, Deep learning and Statistical models",
+      "name": "Blog App",
+      "createdAt": "2023-06-19T14:24:55Z",
+      "url": "https://github.com/ARIERICYRON/blog_ap",
+      "description": "This is a Backend app for a blog that performs all CRUD functions and basic authentication",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
+          "name": "Ruby",
           "iconifyClass": "logos-python"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkxNTU5NTE3NTk=",
-      "name": "Stock-Prediction-using-LSTM",
+      "name": "Micro -rediit Backend App",
       "createdAt": "2018-11-03T05:00:56Z",
-      "url": "https://github.com/ashutosh1919/Stock-Prediction-using-LSTM",
-      "description": "This Project is predicting stocks for 32 companies with error less than 1% using LSTM Networks.",
+      "url": "https://github.com/ARIERICYRON/micro-reddit",
+      "description": "This is a Ruby on Rails Project",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
+          "name": "Ruby",
           "iconifyClass": "logos-python"
         },
         {
@@ -78,28 +78,28 @@
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkyMDIxNDc4ODA=",
-      "name": "Pick-Parser",
+      "name": "Blog_app Backend",
       "createdAt": "2019-08-13T13:13:00Z",
-      "url": "https://github.com/dsc-iiitdmk/Pick-Parser",
-      "description": "This Project is to create a tool which can parse the Resumes and transform them into our own templates",
+      "url": "https://github.com/ARIERICYRON/phase-3-project",
+      "description": "This Project is a Simple Blog app that Performs GET, POST, and DELETE request",
       "isFork": false,
       "languages": [
         {
-          "name": "Python",
+          "name": "Ruby",
           "iconifyClass": "logos-python"
         }
       ]
     },
     {
       "id": "MDEwOlJlcG9zaXRvcnkxODIxMjk3NTQ=",
-      "name": "Survival_3D_Game",
-      "createdAt": "2019-04-18T17:25:51Z",
-      "url": "https://github.com/ashutosh1919/Survival_3D_Game",
-      "description": "Survival Game using Unity3D",
+      "name": "E-commerce",
+      "createdAt": "2022-04-18T17:25:51Z",
+      "url": "https://github.com/ARIERICYRON/phase-4-project",
+      "description": "A simple E-commerce Project",
       "isFork": false,
       "languages": [
         {
-          "name": "C#",
+          "name": "Ruby",
           "iconifyClass": "logos-c-sharp"
         }
       ]

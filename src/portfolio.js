@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Cyron Arieri Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "http://ariericyron.com",
   },
 };
 
@@ -21,14 +21,13 @@ const seo = {
 const greeting = {
   title: "Cyron Arieri",
   logo_name: "CyronArieri",
-  nickname: "Code ",
+  nickname: "Babu",
   subTitle:
     "Fullstack Developer with more than two year of Fullstack application development. I have extensive experience working with Javascript, React, Ruby, Ruby on Rails, redux, typescript and Digital Marketing. Dynamic Software Developer skilled at developing complex solutions, possessing strong creative thinking skills , and high integrity. I am dedicated to constantly improving tools and infrastructure to maximize productivity, minimize system downtime, and quicly respond to the changing needs of the business. A fast Learner, self motivated, and dependabe individual",
 
   resumeLink:
     "https://drive.google.com/file/d/1FL_wydnPF2SWCdw2goYAgZ1KKBx8TpcD/view?usp=sharing",
-  portfolio_repository:
-    "https://github.com/ARIERICYRON/Portifolio/tree/development",
+  portfolio_repository: "https://github.com/ARIERICYRON/Portifolio",
   githubProfile: "https://github.com/ARIERICYRON",
 };
 
