@@ -32,15 +32,6 @@ const greeting = {
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
-
   {
     name: "Github",
     link: "https://github.com/ARIERICYRON",
@@ -87,14 +78,14 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
+          skillName: "Analytics",
+          fontAwesomeClassname: "fa-solid fa-chart-simple",
           style: {
             backgroundColor: "transparent",
           },
         },
         {
-          skillName: "Keras",
+          skillName: "SEO",
           fontAwesomeClassname: "simple-icons:keras",
           style: {
             backgroundColor: "white",
@@ -108,8 +99,8 @@ const skills = {
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Developing web applications using reactJs, Ruby on Rails and Ruby",
+        "⚡ Creating application backend in Ruby, Ruby on Rails & PostgreSQL",
       ],
       softwareSkills: [
         {
@@ -170,15 +161,15 @@ const skills = {
           },
         },
         {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
+          skillName: "Ruby",
+          fontAwesomeClassname: "simple-icons:ruby",
           style: {
             color: "#663399",
           },
         },
         {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
+          skillName: "Ruby on Rails",
+          fontAwesomeClassname: "simple-icons:rails",
           style: {
             color: "#02569B",
           },
@@ -269,7 +260,7 @@ const competitiveSites = {
       style: {
         color: "#F79F1B",
       },
-      profileLink: "https://leetcode.com/layman_brother/",
+      profileLink: "",
     },
     {
       siteName: "HackerRank",
@@ -277,7 +268,7 @@ const competitiveSites = {
       style: {
         color: "#2EC866",
       },
-      profileLink: "https://www.hackerrank.com/layman_brother",
+      profileLink: "",
     },
     {
       siteName: "Codechef",
@@ -285,7 +276,7 @@ const competitiveSites = {
       style: {
         color: "#5B4638",
       },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
+      profileLink: "",
     },
     {
       siteName: "Codeforces",
@@ -293,7 +284,7 @@ const competitiveSites = {
       style: {
         color: "#1F8ACB",
       },
-      profileLink: "http://codeforces.com/profile/layman_brother",
+      profileLink: "",
     },
     {
       siteName: "Hackerearth",
@@ -301,7 +292,7 @@ const competitiveSites = {
       style: {
         color: "#323754",
       },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
+      profileLink: "",
     },
     {
       siteName: "Kaggle",
@@ -309,7 +300,7 @@ const competitiveSites = {
       style: {
         color: "#20BEFF",
       },
-      profileLink: "https://www.kaggle.com/laymanbrother",
+      profileLink: "",
     },
   ],
 };
@@ -621,40 +612,35 @@ const publications = {
       name: "Artificial Intelligence Paper",
       createdAt: "2020-03-06T16:26:54Z",
       description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      url: "",
     },
     {
       id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzi=",
       name: "Artificial Intelligence Paper",
       createdAt: "2020-03-06T16:26:54Z",
       description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      url: "",
     },
     {
       id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNze=",
       name: "Artificial Intelligence Paper",
       createdAt: "2020-03-06T16:26:54Z",
       description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      url: "",
     },
     {
       id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzt=",
       name: "Artificial Intelligence Paper",
       createdAt: "2020-03-06T16:26:54Z",
       description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      url: "",
     },
     {
       id: "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzb=",
       name: "Artificial Intelligence Paper",
       createdAt: "2020-03-06T16:26:54Z",
       description: "Paper Written on Artificial Intelligence published in xyz ",
-      url:
-        "https://www.andrewng.org/publications/building-high-level-features-using-large-scale-unsupervised-learning/",
+      url: "",
     },
   ],
 };
