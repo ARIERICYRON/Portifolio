@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Cyron's Portfolio",
   description:
-    "Fullstack Developer with one year of Web application development. I have extensive experience working with Javascript, React, Ruby, Ruby on Rails, redux, typescript and Digital Marketing. Dynamic Software Developer skilled at developing complex solutions, possessing strong creative thinking skills , and high integrity. I am dedicated to constantly improving tools and infrastructure to maximize productivity, minimize system downtime, and quicly respond to the changing needs of the business. A fast Learner, self motivated, and dependabe individual",
+    "Dynamic fullstack Developer with 2 years of web development. Skilled at developing complex solutions, possessing strong creative thinking skills, and high integrity. I am dedicated to constantly improving tools and infrastructure to maximise productivity, minimize system downtime and quickly resposnd to the changing needs of business. A fast learner, self motivated, and dependable individual",
   og: {
     title: "Cyron Arieri Portfolio",
     type: "website",
