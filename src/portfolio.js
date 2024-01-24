@@ -26,7 +26,7 @@ const greeting = {
     "Fullstack Developer with more than two year of Fullstack application development. I have extensive experience working with Javascript, React, Ruby, Ruby on Rails, redux, typescript and Digital Marketing. Dynamic Software Developer skilled at developing complex solutions, possessing strong creative thinking skills , and high integrity. I am dedicated to constantly improving tools and infrastructure to maximize productivity, minimize system downtime, and quicly respond to the changing needs of the business. A fast Learner, self motivated, and dependabe individual",
 
   resumeLink:
-    "https://drive.google.com/file/d/1d51WpGsPo2XLPhP_jcpL98-V7pP_xAD2/view?usp=sharing",
+    "https://drive.google.com/file/d/1qbqzL7zQ0jcLDuUgv-jiw0nYVWy77ThN/view?usp=drive_link",
   portfolio_repository: "https://github.com/ARIERICYRON/Portifolio",
   githubProfile: "https://github.com/ARIERICYRON",
 };
@@ -662,12 +662,12 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle: "219 Pearson Avenue, Toronto, Canada, M6R 1G6",
+    subtitle: "Toronto, Canada",
     locality: "Toronto",
     country: "Canada",
     region: "Toronto",
-    postalCode: "M6R1G6",
-    streetAddress: "219 Pearson Avenue",
+    postalCode: "####",
+    streetAddress: "Toronto",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
   },
