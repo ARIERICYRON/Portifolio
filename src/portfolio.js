@@ -9,11 +9,11 @@ const settings = {
 const seo = {
   title: "Cyron's Portfolio",
   description:
-    "Dynamic fullstack Developer with 2 years of web development. Skilled at developing complex solutions, possessing strong creative thinking skills, and high integrity. I am dedicated to constantly improving tools and infrastructure to maximise productivity, minimize system downtime and quickly resposnd to the changing needs of business. A fast learner, self motivated, and dependable individual",
+    "Experienced Fullstack Developer, Strong in complex solutions, creative thinking, and system optimization. Fast learner, Self motivated and reliable.",
   og: {
     title: "Cyron Arieri Portfolio",
     type: "website",
-    url: "http://ariericyron.com",
+    url: "https://ariericyron.com",
   },
 };
 
