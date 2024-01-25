@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "CyronArieri",
   nickname: "Babu",
   subTitle:
-    "Fullstack Developer with more than two year of Fullstack application development. I have extensive experience working with Javascript, React, Ruby, Ruby on Rails, redux, typescript and Digital Marketing. Dynamic Software Developer skilled at developing complex solutions, possessing strong creative thinking skills , and high integrity. I am dedicated to constantly improving tools and infrastructure to maximize productivity, minimize system downtime, and quicly respond to the changing needs of the business. A fast Learner, self motivated, and dependabe individual",
+    "Experienced Fullstack Developer, Strong in complex solutions, creative thinking, and system optimization. Fast learner, Self motivated and reliable.",
 
   resumeLink:
     "https://drive.google.com/file/d/1qbqzL7zQ0jcLDuUgv-jiw0nYVWy77ThN/view?usp=drive_link",
