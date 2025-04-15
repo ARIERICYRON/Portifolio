@@ -13,7 +13,7 @@ const seo = {
   og: {
     title: "Cyron Arieri Portfolio",
     type: "website",
-    url: "https://ariericyron.com",
+    url: "https://www.ariericyron.com/",
   },
 };
 
