@@ -21,12 +21,12 @@ const seo = {
 const greeting = {
   title: "Cyron Arieri",
   logo_name: "CyronArieri",
-  nickname: "Babu",
+  nickname: "Prodigy",
   subTitle:
-    "Experienced Fullstack Developer, Strong in complex solutions, creative thinking, and system optimization. Fast learner, Self motivated and reliable.",
+    "Results-driven Full-Stack Developer with 2+ of experience designing, developing, and deploying scalable web applications. Proficient in both front-end and back-end technologies. Skilled in Agile methodologies , CI / CD pipelines, and cloud platforms like AWS and GCP. Passionate about building user-centric high-performance applications and collaborating with cross-functional teams to deliver innovative solutions.",
 
   resumeLink:
-    "https://drive.google.com/file/d/1qbqzL7zQ0jcLDuUgv-jiw0nYVWy77ThN/view?usp=drive_link",
+    "https://drive.google.com/file/d/1_pmARlxA73aGg-sGq3xZdkFP2apVwjiE/view?usp=sharing",
   portfolio_repository: "https://github.com/ARIERICYRON/Portifolio",
   githubProfile: "https://github.com/ARIERICYRON",
 };
@@ -46,7 +46,7 @@ const socialMediaLinks = [
   },
   {
     name: "Gmail",
-    link: "mailto:ariericyron@gmail.com",
+    link: "mailto:8ld8r39r@anonaddy.me",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
@@ -67,40 +67,17 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Digital marketing and Google Analytics",
-      fileName: "DataScienceImg",
-      skills: [
-        "⚡ Search Engine Optimization(SEO)",
-        "⚡ E-commerce",
-        "⚡ Email Marketing",
-        "⚡ Display Advertising",
-        "⚡ Marketing",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Analytics",
-          fontAwesomeClassname: "fa-solid fa-chart-simple",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "SEO",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-      ],
-    },
-    {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive website front end using React-Redux",
-        "⚡ Developing web applications using reactJs, Ruby on Rails and Ruby",
-        "⚡ Creating application backend in Ruby, Ruby on Rails & PostgreSQL",
+        "⚡ Proficient in front-end technologies including HTML5, CSS3, JavaScript (ES6+), TypeScript, and frameworks such as React.js (with Redux and Context API). Experienced in building responsive and mobile-first interfaces using Tailwind CSS, Bootstrap, Ant Design, and Material UI. Familiar with server-side rendering and static site generation using Next.js, and modern front-end tooling like Webpack, Babel, and Vite.",
+        "⚡ Skilled in back-end development with Ruby on Rails, and Django. Experienced in designing and consuming RESTful APIs, implementing MVC architecture, and managing user authentication and authorization using JWT and OAuth. Knowledgeable in real-time communication with WebSockets.",
+        "⚡ Strong background in working with databases including PostgreSQL, MySQL, SQLite, MongoDB, and Redis. Experienced with ORMs such as Prisma, Sequelize, TypeORM, and ActiveRecord. Familiar with Firebase Realtime Database and Firestore for cloud-based data management.",
+        "⚡ Hands-on experience with cloud platforms like AWS (EC2, S3, RDS, Lambda, CloudFront) and Google Cloud Platform. Skilled in containerization with Docker and orchestration using Kubernetes. Proficient in CI/CD pipelines using GitHub Actions, Jenkins, and CircleCI, and deploying applications with Nginx or Apache. Basic knowledge of infrastructure as code using Terraform and CloudFormation.",
+        "⚡ Experienced in testing and quality assurance using Jest, Mocha, Chai, and React Testing Library, as well as end-to-end testing with Cypress and Playwright. Proficient in API testing with Postman and Swagger, and test-driven development using RSpec and Capybara for Ruby projects.",
+        "⚡ Proficient in version control using Git with GitHub and GitLab, and experienced in Agile and Scrum methodologies using tools like Jira, Trello, and Notion. Comfortable collaborating with designers using Figma and Adobe XD. Knowledgeable in web accessibility standards (WCAG), web security best practices (OWASP, XSS, CSRF), and performance optimization techniques.",
+        "⚡ Strong interpersonal and soft skills including problem-solving, effective communication, cross-functional collaboration, time management, and a continuous learning mindset.",
+        "⚡ Passionate about building scalable and maintainable applications, and dedicated to delivering high-quality software solutions that meet user needs and business goals.",
       ],
       softwareSkills: [
         {
@@ -174,16 +151,51 @@ const skills = {
             color: "#02569B",
           },
         },
+        {
+          title: "Digital marketing and Google Analytics",
+          fileName: "DataScienceImg",
+          skills: [
+            "⚡ Search Engine Optimization(SEO)",
+            "⚡ E-commerce",
+            "⚡ Email Marketing",
+            "⚡ Display Advertising",
+            "⚡ Marketing",
+          ],
+          softwareSkills: [
+            {
+              skillName: "Analytics",
+              fontAwesomeClassname: "fa-solid fa-chart-simple",
+              style: {
+                backgroundColor: "transparent",
+              },
+            },
+            {
+              skillName: "SEO",
+              fontAwesomeClassname: "simple-icons:keras",
+              style: {
+                backgroundColor: "white",
+                color: "#D00000",
+              },
+            },
+          ],
+        },
       ],
     },
     {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Designed and deployed scalable cloud-based solutions including servers, databases, networks, and applications across AWS and Azure environments.",
+        "⚡ Migrated on-premise systems and legacy applications to cloud infrastructure, ensuring minimal downtime and data integrity.",
+        "⚡ Automated cloud infrastructure provisioning and management using Infrastructure as Code tools such as Terraform and AWS CloudFormation.",
+        "⚡ Managed and optimized cloud environments for high availability, performance, and cost-effectiveness by monitoring resource usage and applying best practices.",
+        "⚡ Creating and managing Docker containers",
+        "⚡ Implemented robust cloud security measures including IAM policies, encryption protocols, and network configurations to safeguard data and services.",
+        "⚡ Developed and maintained CI/CD pipelines for seamless application deployment and updates using tools like Jenkins, GitHub Actions, and AWS CodePipeline.",
+        "⚡ Developed CI/CD pipelines for automated deployment and testing of applications using tools like Jenkins, GitHub Actions, and AWS CodePipeline.",
+        "⚡ Working with cloud storage solutions",
+        "⚡ Monitored cloud systems for performance and reliability using tools like CloudWatch and Prometheus, and resolved issues through proactive troubleshooting.",
+        "⚡ Collaborated cross-functionally with development, DevOps, and security teams to streamline deployments and support continuous delivery pipelines.",
       ],
       softwareSkills: [
         {
@@ -235,7 +247,15 @@ const skills = {
       fileName: "DesignImg",
       skills: [
         "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
+        "⚡ Creating responsive designs using Figma",
+        "⚡ Designing user-friendly interfaces for better user experience",
+        "⚡ Conducting user research and usability testing",
+        "⚡ Creating wireframes and prototypes",
+        "⚡ Collaborating with developers to implement designs",
+        "⚡ Keeping up with design trends and best practices",
+        "⚡ Creating design systems and style guides",
+        "⚡ Designing for accessibility and inclusivity",
+        "⚡ Creating and maintaining design documentation",
         "⚡ Creating the flow of application functionalities to optimize user experience",
       ],
       softwareSkills: [
@@ -315,8 +335,8 @@ const degrees = {
       duration: "2019 - 2022",
       descriptions: [
         "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ Apart from this, I have done courses on Cybersecurity Cloud Computing and Full Stack Development.",
+        "⚡ I was selected for Merit Scholarship for my academic performance.",
       ],
       website_link: "https://www.ku.ac.ke/",
     },
@@ -327,9 +347,10 @@ const degrees = {
       alt_name: "Moringa School",
       duration: "2022 - 2022",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ I have studied Full Stack Development and Data Science.",
+        "⚡ I have done projects on Full Stack Development.",
+        "⚡ During my time at the Bootcamp, i led a team of 8 students to develop a web application.",
+        "⚡ I was selected for Merit Scholarship for my academic performance.",
       ],
       website_link: "https://moringaschool.com/",
     },
@@ -340,7 +361,7 @@ const certifications = {
   certifications: [
     {
       title: "Software Development",
-      subtitle: "- Andrew Ng",
+      subtitle: "- Fullstack Developer",
       logo_path: "moringa.png",
       certificate_link:
         "https://drive.google.com/file/d/1mrrdkO4Wn_e9HmxyzGMwmt4tm3fFKfdN/view?usp=sharing",
@@ -349,7 +370,7 @@ const certifications = {
     },
     {
       title: "Intro to Cybersecurity",
-      subtitle: "- Andrew Ng",
+      subtitle: "- Skills for all",
       logo_path: "cisco_cy.png",
       certificate_link:
         "https://www.credly.com/badges/6b80752d-6277-4d6e-ab89-de8921a6b612/public_url",
@@ -399,41 +420,18 @@ const certifications = {
       alt_name: "Google",
       color_code: "#0C9D5899",
     },
-    {
-      title: "DL on Tensorflow",
-      subtitle: "- Laurence Moroney",
-      logo_path: "deeplearning_ai_logo.png",
-      certificate_link: "",
-      alt_name: "deeplearning.ai",
-      color_code: "#00000099",
-    },
+
     {
       title: "Fullstack Development",
-      subtitle: "- Jogesh Muppala",
-      logo_path: "coursera_logo.png",
+      subtitle: "- Cantek",
+      logo_path: "fullstack.png",
       certificate_link: "",
       alt_name: "Coursera",
       color_code: "#2A73CC",
     },
     {
-      title: "Kuberenetes on GCP",
-      subtitle: "- Qwiklabs",
-      logo_path: "gcp_logo.png",
-      certificate_link: "",
-      alt_name: "GCP",
-      color_code: "#4285F499",
-    },
-    {
-      title: "Cryptography",
-      subtitle: "- Saurabh Mukhopadhyay",
-      logo_path: "nptel_logo.png",
-      certificate_link: "",
-      alt_name: "NPTEL",
-      color_code: "#FFBB0099",
-    },
-    {
-      title: "Cloud Architecture",
-      subtitle: "- Qwiklabs",
+      title: "Advanced SQL for Query Tuning and Performance Optimization",
+      subtitle: "- Linkedin",
       logo_path: "gcp_logo.png",
       certificate_link: "",
       alt_name: "GCP",
@@ -456,28 +454,17 @@ const experience = {
       experiences: [
         {
           title: "FullStack",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
-          location: "Nairobi, Kenya",
+          company: "Vosyn",
+          company_url: "https://vosyn.ai/",
+          logo_path: "vosyn.png",
+          duration: "Sep 2024 - April 2025",
+          location: "Toronto, Canada",
           description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
+            "An AI-powered plaform that offers real time transription and translation in multiple languages. It is designed to enhance communication and collaboration across language barriers.",
           color: "#0879bf",
         },
         {
-          title: "FullStack Developer",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#9b1578",
-        },
-        {
-          title: "FullStack Developer",
+          title: "FullStack",
           company: "FaRu Health",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
@@ -485,7 +472,7 @@ const experience = {
           location: "Nairobi, Kenya",
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#fc1f20",
+          color: "#0879bf",
         },
       ],
     },
@@ -503,28 +490,6 @@ const experience = {
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
           color: "#000000",
         },
-        {
-          title: "FullStack Developer Intern",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sept 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#ee3c26",
-        },
-        {
-          title: "Fullstack Developer Intern",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
-          location: "Work From Home",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#0071C5",
-        },
       ],
     },
     {
@@ -540,50 +505,6 @@ const experience = {
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
           color: "#4285F4",
-        },
-        {
-          title: "Volunteer Fullstack Developer",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#D83B01",
-        },
-        {
-          title: "Volunteer Fullstack Developer",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#000000",
-        },
-        {
-          title: "Volunteer Fullstack Developer",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - May 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#0C9D58",
-        },
-        {
-          title: "Volunteer Fullstack Developer",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#181717",
         },
       ],
     },
@@ -669,7 +590,7 @@ const contactPageData = {
     postalCode: "####",
     streetAddress: "Toronto",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+    location_map_link: "https://g.co/kgs/yiX43K5",
   },
   phoneSection: {
     title: "",
