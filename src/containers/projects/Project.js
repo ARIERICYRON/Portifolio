@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ApolloClient from "apollo-boost";
-import { gql } from "apollo-boost";
+import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 import "./Project.css";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
@@ -17,12 +16,9 @@ export default function Projects() {
   function getRepoData() {
     const client = new ApolloClient({
       uri: "https://api.github.com/graphql",
-      request: (operation) => {
-        operation.setContext({
-          headers: {
-            authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
-          },
-        });
+      cache: new InMemoryCache(),
+      headers: {
+        authorization: `Bearer ${atob(openSource.githubConvertedToken)}`,
       },
     });
 
@@ -58,7 +54,6 @@ export default function Projects() {
       })
       .then((result) => {
         setrepoFunction(result.data.repositoryOwner.pinnedRepositories.edges);
-        console.log(result);
       });
   }
 
