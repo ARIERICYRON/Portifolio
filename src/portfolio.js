@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "CyronArieri",
   nickname: "Prodigy",
   subTitle:
-    "Results-driven Full-Stack Developer with 2+ of experience designing, developing, and deploying scalable web applications. Proficient in both front-end and back-end technologies. Skilled in Agile methodologies , CI / CD pipelines, and cloud platforms like AWS and GCP. Passionate about building user-centric high-performance applications and collaborating with cross-functional teams to deliver innovative solutions.",
+    "Results-driven Full-Stack Developer with 1+ of experience designing, developing, and deploying scalable web applications. Proficient in both front-end and back-end technologies. Skilled in Agile methodologies , CI / CD pipelines, and cloud platforms like AWS and GCP. Passionate about building user-centric high-performance applications and collaborating with cross-functional teams to deliver innovative solutions.",
 
   resumeLink:
     "https://drive.google.com/file/d/1_pmARlxA73aGg-sGq3xZdkFP2apVwjiE/view?usp=sharing",
@@ -457,7 +457,7 @@ const experience = {
           company: "Vosyn",
           company_url: "https://vosyn.ai/",
           logo_path: "vosyn.png",
-          duration: "Sep 2024 - April 2025",
+          duration: "Jan 2025 - April 2025",
           location: "Toronto, Canada",
           description:
             "An AI-powered plaform that offers real time transription and translation in multiple languages. It is designed to enhance communication and collaboration across language barriers.",
@@ -468,7 +468,7 @@ const experience = {
           company: "FaRu Health",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
-          duration: "Dec 2021 - Dec 2023",
+          duration: "Dec 2022 - Dec 2023",
           location: "Nairobi, Kenya",
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
@@ -484,7 +484,7 @@ const experience = {
           company: "FaRu Health",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
-          duration: "Dec 2021 - Aug 2023",
+          duration: "Dec 2022 - Aug 2023",
           location: "Nairobi, Kenya",
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
@@ -500,7 +500,7 @@ const experience = {
           company: "FaRu",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
+          duration: "Dec 2022 - Aug 2023",
           location: "Nairobi, Kenya",
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
