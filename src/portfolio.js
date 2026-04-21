@@ -26,7 +26,7 @@ const greeting = {
     "Results-driven Full-Stack Developer with 1+ of experience designing, developing, and deploying scalable web applications. Proficient in both front-end and back-end technologies. Skilled in Agile methodologies , CI / CD pipelines, and cloud platforms like AWS and GCP. Passionate about building user-centric high-performance applications and collaborating with cross-functional teams to deliver innovative solutions.",
 
   resumeLink:
-    "https://drive.google.com/file/d/1_pmARlxA73aGg-sGq3xZdkFP2apVwjiE/view?usp=sharing",
+    "https://drive.google.com/file/d/1DjUUuAfQqDR5CmEUM4DrsX44q8r0vx4Y/view?usp=drive_link",
   portfolio_repository: "https://github.com/ARIERICYRON/Portifolio",
   githubProfile: "https://github.com/ARIERICYRON",
 };
