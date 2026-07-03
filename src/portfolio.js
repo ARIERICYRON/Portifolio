@@ -26,7 +26,7 @@ const greeting = {
     "Full-stack developer with 2+ years of experience building and deploying web applications — React/TypeScript front ends, Rails/Django APIs, and AWS/GCP infrastructure. I enjoy shipping things end-to-end and working closely with the people who'll actually use them.",
 
   resumeLink:
-    "https://drive.google.com/file/d/1_pmARlxA73aGg-sGq3xZdkFP2apVwjiE/view?usp=sharing",
+    "https://drive.google.com/file/d/1DjUUuAfQqDR5CmEUM4DrsX44q8r0vx4Y/view?usp=drive_link",
   portfolio_repository: "https://github.com/ARIERICYRON/Portifolio",
   githubProfile: "https://github.com/ARIERICYRON",
 };
@@ -411,7 +411,7 @@ const experience = {
           company: "Vosyn",
           company_url: "https://vosyn.ai/",
           logo_path: "vosyn.png",
-          duration: "Sep 2024 - April 2025",
+          duration: "Jan 2025 - April 2025",
           location: "Toronto, Canada",
           description:
             "An AI-powered plaform that offers real time transription and translation in multiple languages. It is designed to enhance communication and collaboration across language barriers.",
@@ -422,7 +422,7 @@ const experience = {
           company: "FaRu Health",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
-          duration: "Dec 2021 - Dec 2023",
+          duration: "Dec 2022 - Dec 2023",
           location: "Nairobi, Kenya",
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
@@ -438,7 +438,7 @@ const experience = {
           company: "FaRu Health",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
-          duration: "Dec 2021 - Aug 2023",
+          duration: "Dec 2022 - Aug 2023",
           location: "Nairobi, Kenya",
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
@@ -454,7 +454,7 @@ const experience = {
           company: "FaRu",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
-          duration: "Dec 2021 - Sep 2023",
+          duration: "Dec 2022 - Aug 2023",
           location: "Nairobi, Kenya",
           description:
             "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
