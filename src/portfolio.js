@@ -70,14 +70,10 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Proficient in front-end technologies including HTML5, CSS3, JavaScript (ES6+), TypeScript, and frameworks such as React.js (with Redux and Context API). Experienced in building responsive and mobile-first interfaces using Tailwind CSS, Bootstrap, Ant Design, and Material UI. Familiar with server-side rendering and static site generation using Next.js, and modern front-end tooling like Webpack, Babel, and Vite.",
-        "⚡ Skilled in back-end development with Ruby on Rails, and Django. Experienced in designing and consuming RESTful APIs, implementing MVC architecture, and managing user authentication and authorization using JWT and OAuth. Knowledgeable in real-time communication with WebSockets.",
-        "⚡ Strong background in working with databases including PostgreSQL, MySQL, SQLite, MongoDB, and Redis. Experienced with ORMs such as Prisma, Sequelize, TypeORM, and ActiveRecord. Familiar with Firebase Realtime Database and Firestore for cloud-based data management.",
-        "⚡ Hands-on experience with cloud platforms like AWS (EC2, S3, RDS, Lambda, CloudFront) and Google Cloud Platform. Skilled in containerization with Docker and orchestration using Kubernetes. Proficient in CI/CD pipelines using GitHub Actions, Jenkins, and CircleCI, and deploying applications with Nginx or Apache. Basic knowledge of infrastructure as code using Terraform and CloudFormation.",
-        "⚡ Experienced in testing and quality assurance using Jest, Mocha, Chai, and React Testing Library, as well as end-to-end testing with Cypress and Playwright. Proficient in API testing with Postman and Swagger, and test-driven development using RSpec and Capybara for Ruby projects.",
-        "⚡ Proficient in version control using Git with GitHub and GitLab, and experienced in Agile and Scrum methodologies using tools like Jira, Trello, and Notion. Comfortable collaborating with designers using Figma and Adobe XD. Knowledgeable in web accessibility standards (WCAG), web security best practices (OWASP, XSS, CSRF), and performance optimization techniques.",
-        "⚡ Strong interpersonal and soft skills including problem-solving, effective communication, cross-functional collaboration, time management, and a continuous learning mindset.",
-        "⚡ Passionate about building scalable and maintainable applications, and dedicated to delivering high-quality software solutions that meet user needs and business goals.",
+        "⚡ Build responsive web apps end-to-end with React (Redux, Context API), TypeScript, and Tailwind CSS/Bootstrap on the front end.",
+        "⚡ Design and ship RESTful APIs with Ruby on Rails and Django, including JWT/OAuth auth and WebSocket-based real-time features.",
+        "⚡ Work across PostgreSQL, MySQL, MongoDB, and Redis, with ORMs like ActiveRecord and Prisma.",
+        "⚡ Write tests with Jest, React Testing Library, and RSpec, and ship through Git-based CI/CD with GitHub Actions.",
       ],
       softwareSkills: [
         {
@@ -151,51 +147,16 @@ const skills = {
             color: "#02569B",
           },
         },
-        {
-          title: "Digital marketing and Google Analytics",
-          fileName: "DataScienceImg",
-          skills: [
-            "⚡ Search Engine Optimization(SEO)",
-            "⚡ E-commerce",
-            "⚡ Email Marketing",
-            "⚡ Display Advertising",
-            "⚡ Marketing",
-          ],
-          softwareSkills: [
-            {
-              skillName: "Analytics",
-              fontAwesomeClassname: "fa-solid fa-chart-simple",
-              style: {
-                backgroundColor: "transparent",
-              },
-            },
-            {
-              skillName: "SEO",
-              fontAwesomeClassname: "simple-icons:keras",
-              style: {
-                backgroundColor: "white",
-                color: "#D00000",
-              },
-            },
-          ],
-        },
       ],
     },
     {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Designed and deployed scalable cloud-based solutions including servers, databases, networks, and applications across AWS and Azure environments.",
-        "⚡ Migrated on-premise systems and legacy applications to cloud infrastructure, ensuring minimal downtime and data integrity.",
-        "⚡ Automated cloud infrastructure provisioning and management using Infrastructure as Code tools such as Terraform and AWS CloudFormation.",
-        "⚡ Managed and optimized cloud environments for high availability, performance, and cost-effectiveness by monitoring resource usage and applying best practices.",
-        "⚡ Creating and managing Docker containers",
-        "⚡ Implemented robust cloud security measures including IAM policies, encryption protocols, and network configurations to safeguard data and services.",
-        "⚡ Developed and maintained CI/CD pipelines for seamless application deployment and updates using tools like Jenkins, GitHub Actions, and AWS CodePipeline.",
-        "⚡ Developed CI/CD pipelines for automated deployment and testing of applications using tools like Jenkins, GitHub Actions, and AWS CodePipeline.",
-        "⚡ Working with cloud storage solutions",
-        "⚡ Monitored cloud systems for performance and reliability using tools like CloudWatch and Prometheus, and resolved issues through proactive troubleshooting.",
-        "⚡ Collaborated cross-functionally with development, DevOps, and security teams to streamline deployments and support continuous delivery pipelines.",
+        "⚡ Deploy and manage application infrastructure on AWS (EC2, S3, RDS, Lambda) and GCP.",
+        "⚡ Containerize services with Docker and automate provisioning with Terraform.",
+        "⚡ Build CI/CD pipelines with GitHub Actions and Jenkins for automated deployment.",
+        "⚡ Apply core cloud security practices — IAM policies, encryption, network configuration.",
       ],
       softwareSkills: [
         {
@@ -246,17 +207,9 @@ const skills = {
       title: "UI/UX Design",
       fileName: "DesignImg",
       skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Creating responsive designs using Figma",
-        "⚡ Designing user-friendly interfaces for better user experience",
-        "⚡ Conducting user research and usability testing",
-        "⚡ Creating wireframes and prototypes",
-        "⚡ Collaborating with developers to implement designs",
-        "⚡ Keeping up with design trends and best practices",
-        "⚡ Creating design systems and style guides",
-        "⚡ Designing for accessibility and inclusivity",
-        "⚡ Creating and maintaining design documentation",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
+        "⚡ Design responsive interfaces and prototypes in Figma, from wireframe to hand-off.",
+        "⚡ Validate design decisions with lightweight usability testing.",
+        "⚡ Collaborate closely with engineering to translate designs into shipped UI.",
       ],
       softwareSkills: [
         {
