@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "CyronArieri",
   nickname: "Prodigy",
   subTitle:
-    "Results-driven Full-Stack Developer with 2+ of experience designing, developing, and deploying scalable web applications. Proficient in both front-end and back-end technologies. Skilled in Agile methodologies , CI / CD pipelines, and cloud platforms like AWS and GCP. Passionate about building user-centric high-performance applications and collaborating with cross-functional teams to deliver innovative solutions.",
+    "Full-stack developer with 2+ years of experience building and deploying web applications — React/TypeScript front ends, Rails/Django APIs, and AWS/GCP infrastructure. I enjoy shipping things end-to-end and working closely with the people who'll actually use them.",
 
   resumeLink:
     "https://drive.google.com/file/d/1_pmARlxA73aGg-sGq3xZdkFP2apVwjiE/view?usp=sharing",
