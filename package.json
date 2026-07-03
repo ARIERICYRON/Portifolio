@@ -31,6 +31,8 @@
     "styletron-react": "^5.2.7"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^3.6.2",
@@ -54,6 +56,11 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react-router/dom$": "<rootDir>/node_modules/react-router/dist/development/dom-export.js"
     }
   },
   "lint-staged": {
