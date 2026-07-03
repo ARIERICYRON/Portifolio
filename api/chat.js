@@ -4,8 +4,8 @@
 // project's environment variables.
 
 const ALLOWED_ORIGINS = [
-  "https://www.ariericyron.com",
-  "https://ariericyron.com",
+  "https://www.ariericyron.ca",
+  "https://ariericyron.ca",
   "http://localhost:3000",
 ];
 

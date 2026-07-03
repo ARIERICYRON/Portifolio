@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "Portfolio",
-  "homepage": "https://ARIERICYRON.COM",
+  "homepage": "https://www.ariericyron.ca",
   "version": "0.1.0",
   "scripts": {
     "build": "react-scripts build",
