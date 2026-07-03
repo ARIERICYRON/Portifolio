@@ -1,70 +1,48 @@
-# Getting Started with Create React App
+# Cyron Arieri — Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Personal portfolio site for [ariericyron.com](https://www.ariericyron.com/), built with React 18 and deployed to GitHub Pages.
 
-## Available Scripts
+## Tech stack
 
-In the project directory, you can run:
+- **React 18** + **React Router v7** (`HashRouter`)
+- **styled-components** for theming, **BaseUI** / **react-bootstrap** for a few UI primitives
+- **framer-motion**-backed **react-reveal** for scroll animations
+- Create React App (`react-scripts`) for build tooling
 
-### `npm start`
+## Getting started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+```bash
+npm install
+npm start        # dev server at http://localhost:3000
+npm test         # run the test suite once with --watchAll=false, or omit the flag to watch
+npm run build    # production build to /build
+```
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project structure
 
-### `npm test`
+```
+src/
+  portfolio.js        # all site content (name, bio, skills, experience, education, etc.)
+  theme.js             # color themes; chosenTheme picks the active one
+  pages/               # one folder per route, composes containers + components
+  containers/          # larger content-aware sections (Greeting, Skills, Certifications, ...)
+  components/          # small reusable pieces (Header, Footer, cards, buttons, ...)
+  shared/              # static JSON data (contact info, open-source project list)
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To change what's on the site — bio, skills, work experience, education, certifications, contact links — edit **`src/portfolio.js`**. Everything else just renders that data.
 
-### `npm run build`
+## Deployment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The site deploys to GitHub Pages via [`gh-pages`](https://github.com/tschaub/gh-pages):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run deploy
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This builds the app and pushes `/build` to the `gh-pages` branch. The custom domain is configured via `CNAME`.
 
-### `npm run eject`
+## Notes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Routing uses a hash-based router (`/#/projects`, etc.) since the site is a static host with no server-side rewrites.
+- `react-scripts` (Create React App) is unmaintained upstream; some transitive dev-tooling vulnerabilities from `npm audit` can't be resolved without ejecting or migrating off it.
