@@ -3,6 +3,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import ThemeSwitcher from "../themeSwitcher/ThemeSwitcher";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -92,6 +93,9 @@ export default function Header({ theme }) {
               >
                 Contact Me
               </NavLink>
+            </li>
+            <li>
+              <ThemeSwitcher />
             </li>
           </ul>
         </header>

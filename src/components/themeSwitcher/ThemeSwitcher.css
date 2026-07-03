@@ -1,0 +1,33 @@
+.theme-switcher {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 20px;
+}
+
+.theme-swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s ease-out;
+}
+
+.theme-swatch:hover {
+  transform: scale(1.2);
+}
+
+.theme-swatch-active {
+  outline: 2px solid #fff;
+  outline-offset: 1px;
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 48em) {
+  .theme-switcher {
+    padding: 0 10px;
+  }
+}
