@@ -12,12 +12,10 @@
     "test": "react-scripts test"
   },
   "dependencies": {
-    "@apollo/client": "^4.0.9",
     "baseui": "^9.65.3",
     "bootstrap": "^5.3.8",
     "chart.js": "^4.5.1",
     "gh-pages": "^6.3.0",
-    "graphql": "^16.12.0",
     "react": "^18.3.1",
     "react-bootstrap": "^2.10.10",
     "react-chartjs-2": "^5.3.1",
@@ -31,6 +29,8 @@
     "styletron-react": "^5.2.7"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^14.2.1",
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^3.6.2",
@@ -54,6 +54,11 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
+    }
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^react-router/dom$": "<rootDir>/node_modules/react-router/dist/development/dom-export.js"
     }
   },
   "lint-staged": {

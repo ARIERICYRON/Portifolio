@@ -1,23 +1,24 @@
 .dev-icons-languages {
-    padding-left: 0;
-    list-style: none;
-    font-size: 2rem;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+  padding-left: 0;
+  list-style: none;
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.software-skill-inline-languages {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-family: "Google Sans Regular";
+}
+
+@media (max-width: 768px) {
+  .dev-icons-languages {
+    gap: 8px;
   }
-  
-  .software-skill-inline-languages {
-    display: inline-block;
-    margin-right: 20px;
-    margin-bottom: 0px;
-    font-family: "Google Sans Regular";
-  }
-  
-  @media (max-width: 768px) {
-    .software-skill-inline-languages {
-      margin-right: 10px;
-      margin-bottom: 0px;
-    }
-  }
-  
+}
