@@ -74,6 +74,7 @@ const skills = {
         "⚡ Design and ship RESTful APIs with Ruby on Rails and Django, including JWT/OAuth auth and WebSocket-based real-time features.",
         "⚡ Work across PostgreSQL, MySQL, MongoDB, and Redis, with ORMs like ActiveRecord and Prisma.",
         "⚡ Write tests with Jest, React Testing Library, and RSpec, and ship through Git-based CI/CD with GitHub Actions.",
+        "⚡ Use AI coding assistants like Claude Code as part of my daily workflow — scaffolding, debugging, and reviewing code faster while staying deliberate about what ships.",
       ],
       softwareSkills: [
         {
