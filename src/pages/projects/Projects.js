@@ -20,12 +20,23 @@ const GITHUB_USERNAME = "ARIERICYRON";
 const MAX_REPOS = 6;
 
 // Always shown first, in this order, regardless of stars/activity.
+// GitHub's language API only detects programming languages, not
+// frameworks - so the tech list here is read by hand from each repo's
+// README rather than derived automatically.
 const PINNED_REPOS = [
-  { owner: "ARIERICYRON", repo: "Portifolio" },
-  { owner: "DennohKim", repo: "Tastebite-Recipe-App" },
+  {
+    owner: "ARIERICYRON",
+    repo: "Portifolio",
+    languages: ["React", "JavaScript", "Styled Components", "Bootstrap"],
+  },
+  {
+    owner: "DennohKim",
+    repo: "Tastebite-Recipe-App",
+    languages: ["React", "TailwindCSS", "Ruby on Rails"],
+  },
 ];
 
-const LANGUAGE_ICONS = {
+const TECH_ICONS = {
   JavaScript: "logos-javascript",
   TypeScript: "logos-typescript",
   HTML: "logos-html-5",
@@ -37,24 +48,41 @@ const LANGUAGE_ICONS = {
   Shell: "logos-bash",
   Go: "logos-go",
   PHP: "logos-php",
+  React: "logos-react",
+  "Styled Components": "simple-icons:styledcomponents",
+  Bootstrap: "logos-bootstrap",
+  TailwindCSS: "logos-tailwindcss-icon",
+  "Ruby on Rails": "logos-rails",
 };
 
-function mapRepo(repo) {
+function toIcon(name) {
+  return { name, iconifyClass: TECH_ICONS[name] || "logos-github-icon" };
+}
+
+function mapRepo(repo, overrideLanguages) {
   return {
     id: repo.id,
     name: repo.name,
     createdAt: repo.created_at,
     url: repo.html_url,
     description: repo.description || "",
-    languages: repo.language
-      ? [
-          {
-            name: repo.language,
-            iconifyClass: LANGUAGE_ICONS[repo.language] || "logos-github-icon",
-          },
-        ]
-      : [],
+    languages: overrideLanguages
+      ? overrideLanguages.map(toIcon)
+      : repo.language
+        ? [toIcon(repo.language)]
+        : [],
   };
+}
+
+function fetchDetectedLanguages(owner, repoName) {
+  return fetch(`https://api.github.com/repos/${owner}/${repoName}/languages`)
+    .then((res) => (res.ok ? res.json() : {}))
+    .then((bytesByLanguage) =>
+      Object.keys(bytesByLanguage)
+        .sort((a, b) => bytesByLanguage[b] - bytesByLanguage[a])
+        .slice(0, 4),
+    )
+    .catch(() => []);
 }
 
 export default function Projects({ theme, onToggle }) {
@@ -75,13 +103,17 @@ export default function Projects({ theme, onToggle }) {
     ).then((res) => (res.ok ? res.json() : null));
 
     Promise.all([pinnedRequests, ownRequest])
-      .then(([pinnedResults, ownRepos]) => {
+      .then(async ([pinnedResults, ownRepos]) => {
         if (cancelled) return;
 
-        const pinned = pinnedResults.filter(Boolean).map(mapRepo);
-        const pinnedIds = new Set(pinned.map((repo) => repo.id));
+        const pinned = pinnedResults.map((repo, i) =>
+          repo ? mapRepo(repo, PINNED_REPOS[i].languages) : null,
+        );
+        const pinnedIds = new Set(
+          pinned.filter(Boolean).map((repo) => repo.id),
+        );
 
-        const rest = Array.isArray(ownRepos)
+        const restRepos = Array.isArray(ownRepos)
           ? ownRepos
               .filter((repo) => !repo.fork && !pinnedIds.has(repo.id))
               .sort(
@@ -89,10 +121,22 @@ export default function Projects({ theme, onToggle }) {
                   b.stargazers_count - a.stargazers_count ||
                   new Date(b.pushed_at) - new Date(a.pushed_at),
               )
-              .map(mapRepo)
+              .slice(0, MAX_REPOS - pinned.filter(Boolean).length)
           : [];
 
-        const combined = [...pinned, ...rest].slice(0, MAX_REPOS);
+        const rest = await Promise.all(
+          restRepos.map((repo) =>
+            fetchDetectedLanguages(GITHUB_USERNAME, repo.name).then(
+              (detected) => mapRepo(repo, detected),
+            ),
+          ),
+        );
+
+        if (cancelled) return;
+        const combined = [...pinned.filter(Boolean), ...rest].slice(
+          0,
+          MAX_REPOS,
+        );
         if (combined.length > 0) setRepos(combined);
       })
       .catch(() => {
