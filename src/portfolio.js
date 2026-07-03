@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Cyron's Portfolio",
   description:
-    "Experienced Fullstack Developer, Strong in complex solutions, creative thinking, and system optimization. Fast learner, Self motivated and reliable.",
+    "Full-stack developer building AI-powered and healthcare platforms with React, Rails, Django, and AWS/GCP. AWS DevOps certified.",
   og: {
     title: "Cyron Arieri Portfolio",
     type: "website",
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "CyronArieri",
   nickname: "Prodigy",
   subTitle:
-    "Full-stack developer with 2+ years of experience building and deploying web applications — React/TypeScript front ends, Rails/Django APIs, and AWS/GCP infrastructure. I enjoy shipping things end-to-end and working closely with the people who'll actually use them.",
+    "Full-stack developer building AI-powered and healthcare platforms — React/TypeScript front ends, Rails/Django APIs, deployed on AWS/GCP. AWS DevOps certified. In my first year I've shipped work that cut latency 15% and deployment time 40%.",
 
   resumeLink:
     "https://drive.google.com/file/d/1DjUUuAfQqDR5CmEUM4DrsX44q8r0vx4Y/view?usp=drive_link",
@@ -70,11 +70,11 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Build responsive web apps end-to-end with React (Redux, Context API), TypeScript, and Tailwind CSS/Bootstrap on the front end.",
-        "⚡ Design and ship RESTful APIs with Ruby on Rails and Django, including JWT/OAuth auth and WebSocket-based real-time features.",
-        "⚡ Work across PostgreSQL, MySQL, MongoDB, and Redis, with ORMs like ActiveRecord and Prisma.",
-        "⚡ Write tests with Jest, React Testing Library, and RSpec, and ship through Git-based CI/CD with GitHub Actions.",
-        "⚡ Use AI coding assistants like Claude Code as part of my daily workflow — scaffolding, debugging, and reviewing code faster while staying deliberate about what ships.",
+        "⚡ Build responsive web apps end-to-end with React (Redux, Context API), TypeScript, and Tailwind CSS/Ant Design on the front end.",
+        "⚡ Design and ship RESTful APIs with Ruby on Rails, Django, and Node.js, including JWT/OAuth auth and background jobs with Sidekiq/Redis.",
+        "⚡ Work across PostgreSQL, MySQL, and NoSQL databases, with ORMs like ActiveRecord and Sequelize.",
+        "⚡ Write tests with Jest, React Testing Library, and RSpec (TDD), and ship through Git-based CI/CD with GitHub Actions.",
+        "⚡ Use AI coding assistants like Claude Code, GitHub Copilot, and ChatGPT as part of my daily workflow — scaffolding, debugging, and reviewing code faster while staying deliberate about what ships.",
       ],
       softwareSkills: [
         {
@@ -154,10 +154,10 @@ const skills = {
       title: "Cloud Infra-Architecture",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Deploy and manage application infrastructure on AWS (EC2, S3, RDS, Lambda) and GCP.",
-        "⚡ Containerize services with Docker and automate provisioning with Terraform.",
-        "⚡ Build CI/CD pipelines with GitHub Actions and Jenkins for automated deployment.",
-        "⚡ Apply core cloud security practices — IAM policies, encryption, network configuration.",
+        "⚡ Deploy and manage application infrastructure on AWS (EC2, S3, RDS, Lambda, ECS, Elastic Beanstalk) and GCP.",
+        "⚡ Orchestrate containerized services with Docker and Kubernetes, provisioned as code with Terraform, CloudFormation, and Ansible.",
+        "⚡ Build CI/CD pipelines with GitHub Actions, Jenkins, and AWS CodePipeline/CodeBuild/CodeDeploy for automated deployment.",
+        "⚡ Monitor and secure infrastructure with CloudWatch, CloudTrail, and IAM policies.",
       ],
       softwareSkills: [
         {
@@ -332,8 +332,8 @@ const certifications = {
       color_code: "#00000099",
     },
     {
-      title: "DevOps Certification",
-      subtitle: "- AWS DevOps",
+      title: "AWS DevOps Engineer",
+      subtitle: "- Amazon Web Services, Jan 2024",
       logo_path: "amazon.png",
       certificate_link: "",
       alt_name: "Amazon",
@@ -397,9 +397,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work Experience",
   description:
-    "I have worked with FaRU Health as Fullstack Developer but mainly focusing on Backend. I also participated in the Product designing team and i would occasionally help the frontend team while utilizing Ant design, react, CSS and Typescript. As a Certified AWS DevOps, am familiar with CI/CD, testing and Deployment of applications",
+    "I've worked as a full-stack developer at Vosyn, an AI-powered transcription and translation platform, and at FaRu Health, a digital healthcare platform — building features across React/Django and React/Rails stacks, deploying to AWS and GCP, and holding an AWS DevOps certification.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -407,58 +407,26 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "FullStack",
+          title: "Full-Stack Software Developer",
           company: "Vosyn",
           company_url: "https://vosyn.ai/",
           logo_path: "vosyn.png",
           duration: "Jan 2025 - April 2025",
           location: "Toronto, Canada",
           description:
-            "An AI-powered plaform that offers real time transription and translation in multiple languages. It is designed to enhance communication and collaboration across language barriers.",
+            "Designed and built scalable web features using React and Django, translating evolving product requirements into working, locale-aware UI and backend functionality. Optimized database queries and caching to improve performance by 20% and cut latency by 15%, and automated CI/CD pipelines that reduced deployment time by 40%. Implemented OAuth/JWT authentication and contributed to AI/ML-driven recommendation features.",
           color: "#0879bf",
         },
         {
-          title: "FullStack",
-          company: "FaRu Health",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2022 - Dec 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#0879bf",
-        },
-      ],
-    },
-    {
-      title: "Internships",
-      experiences: [
-        {
-          title: "FullStack Developer Intern",
+          title: "Full-Stack Software Developer",
           company: "FaRu Health",
           company_url: "https://faru.health/",
           logo_path: "FaRu.png",
           duration: "Dec 2022 - Aug 2023",
           location: "Nairobi, Kenya",
           description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#000000",
-        },
-      ],
-    },
-    {
-      title: "Volunteerships",
-      experiences: [
-        {
-          title: "Volunteer Fullstack Developer",
-          company: "FaRu",
-          company_url: "https://faru.health/",
-          logo_path: "FaRu.png",
-          duration: "Dec 2022 - Aug 2023",
-          location: "Nairobi, Kenya",
-          description:
-            "A Digital Healthcare Platform for rapid medical care provision, designed to manage and automate all aspects of medical provision and medical service providers on a single platform.",
-          color: "#4285F4",
+            "Contributed to an end-to-end medical insurance and claims management platform, building responsive front ends with React, TypeScript, and Ant Design integrated with a Ruby on Rails backend. Translated 10+ business requirements into production-ready features, applied Test-Driven Development with RSpec and Jest, and supported production systems through debugging and maintainable fixes.",
+          color: "#0879bf",
         },
       ],
     },

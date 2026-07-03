@@ -1,6 +1,12 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import "./AiAssistant.css";
-import { greeting, skills, experience, degrees } from "../../portfolio.js";
+import {
+  greeting,
+  skills,
+  experience,
+  degrees,
+  certifications,
+} from "../../portfolio.js";
 
 const API_URL = process.env.REACT_APP_CHAT_API_URL;
 const MAX_MESSAGES = 8;
@@ -26,6 +32,10 @@ function buildContext() {
     .map((d) => `${d.subtitle} at ${d.title} (${d.duration})`)
     .join("\n");
 
+  const certificationLines = certifications.certifications
+    .map((c) => `${c.title} ${c.subtitle}`)
+    .join("\n");
+
   return `Name: ${greeting.title}
 Summary: ${greeting.subTitle}
 
@@ -38,7 +48,11 @@ ${experienceLines}
 Education:
 ${educationLines}
 
-GitHub: ${greeting.githubProfile}`;
+Certifications:
+${certificationLines}
+
+GitHub: ${greeting.githubProfile}
+Resume: ${greeting.resumeLink}`;
 }
 
 export default function AiAssistant({ theme }) {
