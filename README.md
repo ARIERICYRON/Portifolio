@@ -1,6 +1,6 @@
 # Cyron Arieri — Portfolio
 
-Personal portfolio site for [ariericyron.com](https://www.ariericyron.com/), built with React 18 and deployed to GitHub Pages.
+Personal portfolio site for [ariericyron.ca](https://www.ariericyron.ca/), built with React 18 and deployed to GitHub Pages.
 
 ## Tech stack
 
