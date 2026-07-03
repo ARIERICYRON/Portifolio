@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import { themes, defaultThemeName } from "./theme";
 import { GlobalStyles } from "./global";
 import { ThemeNameContext } from "./context/ThemeContext";
+import AiAssistant from "./components/aiAssistant/AiAssistant";
 
 const STORAGE_KEY = "portfolio-theme";
 
@@ -30,6 +31,7 @@ function App() {
           <GlobalStyles />
           <div>
             <Main theme={theme} />
+            <AiAssistant theme={theme} />
           </div>
         </>
       </ThemeProvider>

@@ -42,6 +42,18 @@ npm run deploy
 
 This builds the app and pushes `/build` to the `gh-pages` branch. The custom domain is configured via `CNAME`.
 
+## AI assistant (optional)
+
+The site has a floating chat widget (bottom-left) that answers visitor questions about Cyron's background, grounded in `src/portfolio.js`. It's inert by default — the widget doesn't render at all unless configured, so skipping this section is safe.
+
+To enable it:
+
+1. Deploy this repo to [Vercel](https://vercel.com) (import the GitHub repo — it auto-detects the `api/chat.js` serverless function, no config needed). This is separate from the GitHub Pages deploy; the main site stays on GitHub Pages, only the `/api/chat` endpoint needs to live on Vercel.
+2. Get an API key from [console.anthropic.com](https://console.anthropic.com) and add it as an environment variable named `ANTHROPIC_API_KEY` in the Vercel project settings.
+3. Set `REACT_APP_CHAT_API_URL` to your Vercel deployment's URL (e.g. `https://your-project.vercel.app`) wherever the GitHub Pages build runs (e.g. as a build-time env var in CI, or a local `.env` file for testing), then rebuild/redeploy the GitHub Pages site.
+
+Cost controls already built in: the backend uses Haiku (the cheapest/fastest model), caps responses to 200 tokens, has a best-effort per-IP rate limit (20 requests/hour — resets on cold start, not a hard guarantee), and the widget itself caps each browser session to 8 messages. If you ever see real abuse, the next step would be a proper shared-store rate limiter (e.g. Upstash Redis) instead of the in-memory one in `api/chat.js`.
+
 ## Notes
 
 - Routing uses a hash-based router (`/#/projects`, etc.) since the site is a static host with no server-side rewrites.
