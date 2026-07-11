@@ -26,7 +26,7 @@ const greeting = {
     "Full-stack developer building AI-powered, healthcare, and fundraising platforms — React/TypeScript front ends, Rails/Django/Node.js APIs, deployed on AWS/GCP. AWS DevOps certified. I've shipped work that cut latency 15% and deployment time 40%.",
 
   resumeLink:
-    "https://drive.google.com/file/d/1DjUUuAfQqDR5CmEUM4DrsX44q8r0vx4Y/view?usp=drive_link",
+    "https://drive.google.com/file/d/1zD-PFWwyAjv45eA3LeG_FDAxbgrV2tda/view?usp=sharing",
   portfolio_repository: "https://github.com/ARIERICYRON/Portifolio",
   githubProfile: "https://github.com/ARIERICYRON",
 };
