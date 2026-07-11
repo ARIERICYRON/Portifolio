@@ -53,11 +53,49 @@ const TECH_ICONS = {
   Bootstrap: "logos-bootstrap",
   TailwindCSS: "logos-tailwindcss-icon",
   "Ruby on Rails": "logos-rails",
+  PostgreSQL: "simple-icons:postgresql",
+  JWT: "simple-icons:jsonwebtokens",
+  AWS: "simple-icons:amazonaws",
+  Cloudflare: "simple-icons:cloudflare",
+  Vite: "simple-icons:vite",
+  "React Router": "simple-icons:reactrouter",
+  Axios: "simple-icons:axios",
+  Vercel: "simple-icons:vercel",
+  Render: "simple-icons:render",
 };
 
 function toIcon(name) {
   return { name, iconifyClass: TECH_ICONS[name] || "logos-github-icon" };
 }
+
+// Manually-curated cards for projects that live in private repos - no
+// GitHub API data is available, so these are never fetched, just shown
+// as-is, linking to the live app instead of a repo.
+const STATIC_PROJECTS = [
+  {
+    id: "static-tastebite-rebuild",
+    name: "Tastebite",
+    createdAt: "2026-01-11T00:00:00Z",
+    url: "https://tastebite-web.vercel.app/login",
+    description:
+      "Social recipe-sharing app — create and publish recipes with photos, follow cooks, like/comment/save recipes, plan meals with auto-generated shopping lists, and discover trending dishes. Full Rails API + React web app, not just a mockup. Try the live demo: mara@tastebite.app / password123 (all seeded accounts use password123).",
+    languages: [
+      "Ruby",
+      "Ruby on Rails",
+      "PostgreSQL",
+      "JWT",
+      "AWS",
+      "Cloudflare",
+      "React",
+      "Vite",
+      "React Router",
+      "Axios",
+      "TailwindCSS",
+      "Vercel",
+      "Render",
+    ].map(toIcon),
+  },
+];
 
 function mapRepo(repo, overrideLanguages) {
   return {
@@ -86,7 +124,10 @@ function fetchDetectedLanguages(owner, repoName) {
 }
 
 export default function Projects({ theme, onToggle }) {
-  const [repos, setRepos] = useState(fallbackProjects.data);
+  const [repos, setRepos] = useState([
+    ...STATIC_PROJECTS,
+    ...fallbackProjects.data,
+  ]);
 
   useEffect(() => {
     let cancelled = false;
@@ -112,6 +153,8 @@ export default function Projects({ theme, onToggle }) {
         const pinnedIds = new Set(
           pinned.filter(Boolean).map((repo) => repo.id),
         );
+        const pinnedSlots =
+          STATIC_PROJECTS.length + pinned.filter(Boolean).length;
 
         const restRepos = Array.isArray(ownRepos)
           ? ownRepos
@@ -121,7 +164,7 @@ export default function Projects({ theme, onToggle }) {
                   b.stargazers_count - a.stargazers_count ||
                   new Date(b.pushed_at) - new Date(a.pushed_at),
               )
-              .slice(0, MAX_REPOS - pinned.filter(Boolean).length)
+              .slice(0, MAX_REPOS - pinnedSlots)
           : [];
 
         const rest = await Promise.all(
@@ -133,10 +176,11 @@ export default function Projects({ theme, onToggle }) {
         );
 
         if (cancelled) return;
-        const combined = [...pinned.filter(Boolean), ...rest].slice(
-          0,
-          MAX_REPOS,
-        );
+        const combined = [
+          ...STATIC_PROJECTS,
+          ...pinned.filter(Boolean),
+          ...rest,
+        ].slice(0, MAX_REPOS);
         if (combined.length > 0) setRepos(combined);
       })
       .catch(() => {
