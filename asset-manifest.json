@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.4e0e16da.css",
-    "main.js": "/static/js/main.949dd057.js",
+    "main.js": "/static/js/main.9f7ddb8d.js",
     "static/media/portfolio.gif": "/static/media/portfolio.ed6c89f1485f23014ebd.gif",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
@@ -31,6 +31,7 @@
     "static/media/manOnTable.svg": "/static/media/manOnTable.f861b03b5a2d1a28c198.svg",
     "static/media/muffito_logo.png": "/static/media/muffito_logo.a40e290031eaf389bde1.png",
     "static/media/amazon.png": "/static/media/amazon.0bf29a8c539458020c30.png",
+    "static/media/african_centre_toronto.jpeg": "/static/media/african_centre_toronto.90330724703cabcb5eae.jpeg",
     "static/media/deeplearning_ai_logo.png": "/static/media/deeplearning_ai_logo.f5e1bd288e7a2b30a390.png",
     "static/media/nptel_logo.png": "/static/media/nptel_logo.14bc947aebe4b57dd2bc.png",
     "static/media/gcp_logo.png": "/static/media/gcp_logo.63bb0649c9716d110b14.png",
@@ -62,10 +63,10 @@
     "static/media/talksCardBackAlt.svg": "/static/media/talksCardBackAlt.018d87225926eee9ccc3.svg",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.7dc8695e60efbc2baab8.svg",
     "main.4e0e16da.css.map": "/static/css/main.4e0e16da.css.map",
-    "main.949dd057.js.map": "/static/js/main.949dd057.js.map"
+    "main.9f7ddb8d.js.map": "/static/js/main.9f7ddb8d.js.map"
   },
   "entrypoints": [
     "static/css/main.4e0e16da.css",
-    "static/js/main.949dd057.js"
+    "static/js/main.9f7ddb8d.js"
   ]
 }
