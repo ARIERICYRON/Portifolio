@@ -9,7 +9,7 @@ const settings = {
 const seo = {
   title: "Cyron's Portfolio",
   description:
-    "Full-stack developer building AI-powered and healthcare platforms with React, Rails, Django, and AWS/GCP. AWS DevOps certified.",
+    "Full-stack developer building AI-powered, healthcare, and fundraising platforms with React, Rails, Django, Node.js, and AWS/GCP. AWS DevOps certified.",
   og: {
     title: "Cyron Arieri Portfolio",
     type: "website",
@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "CyronArieri",
   nickname: "Prodigy",
   subTitle:
-    "Full-stack developer building AI-powered and healthcare platforms — React/TypeScript front ends, Rails/Django APIs, deployed on AWS/GCP. AWS DevOps certified. In my first year I've shipped work that cut latency 15% and deployment time 40%.",
+    "Full-stack developer building AI-powered, healthcare, and fundraising platforms — React/TypeScript front ends, Rails/Django/Node.js APIs, deployed on AWS/GCP. AWS DevOps certified. I've shipped work that cut latency 15% and deployment time 40%.",
 
   resumeLink:
     "https://drive.google.com/file/d/1DjUUuAfQqDR5CmEUM4DrsX44q8r0vx4Y/view?usp=drive_link",
@@ -40,7 +40,7 @@ const socialMediaLinks = [
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/cyron-mongare-5a12ba142/",
+    link: "https://www.linkedin.com/in/cyronmongare/",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
@@ -75,6 +75,7 @@ const skills = {
         "⚡ Work across PostgreSQL, MySQL, and NoSQL databases, with ORMs like ActiveRecord and Sequelize.",
         "⚡ Write tests with Jest, React Testing Library, and RSpec (TDD), and ship through Git-based CI/CD with GitHub Actions.",
         "⚡ Use AI coding assistants like Claude Code, GitHub Copilot, and ChatGPT as part of my daily workflow — scaffolding, debugging, and reviewing code faster while staying deliberate about what ships.",
+        "⚡ Integrate payment and fundraising platforms — Stripe, PayPal, and Plaid — into production donation and checkout flows.",
       ],
       softwareSkills: [
         {
@@ -146,6 +147,27 @@ const skills = {
           fontAwesomeClassname: "simple-icons:rails",
           style: {
             color: "#02569B",
+          },
+        },
+        {
+          skillName: "PHP",
+          fontAwesomeClassname: "simple-icons:php",
+          style: {
+            color: "#777BB4",
+          },
+        },
+        {
+          skillName: "Stripe",
+          fontAwesomeClassname: "simple-icons:stripe",
+          style: {
+            color: "#635BFF",
+          },
+        },
+        {
+          skillName: "PayPal",
+          fontAwesomeClassname: "simple-icons:paypal",
+          style: {
+            color: "#00457C",
           },
         },
       ],
@@ -399,13 +421,24 @@ const experience = {
   title: "Experience",
   subtitle: "Work Experience",
   description:
-    "I've worked as a full-stack developer at Vosyn, an AI-powered transcription and translation platform, and at FaRu Health, a digital healthcare platform — building features across React/Django and React/Rails stacks, deploying to AWS and GCP, and holding an AWS DevOps certification.",
+    "I'm currently a full-stack consultant at African Centre Toronto, building donation and fundraising platforms for a nonprofit. Before that, I worked at Vosyn (an AI-powered transcription platform) and FaRu Health (a digital healthcare platform), and spent Aug 2023 - Dec 2024 upskilling after relocating to Canada — earning my AWS DevOps certification and building this portfolio's AI assistant plus Tastebite as hands-on projects.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work",
       work: true,
       experiences: [
+        {
+          title: "Full-Stack Web & Webflow Developer (Consultant)",
+          company: "African Centre Toronto",
+          company_url: "",
+          logo_path: "african_centre_toronto.jpeg",
+          duration: "Jun 2025 - Present",
+          location: "Toronto, Canada",
+          description:
+            "Building secure client-facing web applications, donation checkout frameworks, and peer-to-peer fundraising microsites with React, Node.js, Python, and PHP/WordPress for a nonprofit serving newcomer and refugee communities. Engineered a high-performance React donation page integrated with Stripe for a Giving Tuesday campaign built to handle thousands of concurrent donors, and integrated Stripe, PayPal, and Plaid across donation flows.",
+          color: "#c0392b",
+        },
         {
           title: "Full-Stack Software Developer",
           company: "Vosyn",
